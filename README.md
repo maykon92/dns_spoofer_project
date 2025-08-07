@@ -92,7 +92,7 @@ C:\Windows\System32\drivers\etc\hosts
 Add a line to redirect the domain:
 
 ```
-192.168.1.100    instagram.com
+IP    instagram.com
 ```
 
 This ensures DNS bypass and always resolves to your fake server.
@@ -110,7 +110,7 @@ credentials.txt
 Example format:
 
 ```
-[2025-07-03 17:00:00] Instagram | Email: test@example.com | Password: pass123 | IP: 192.168.1.198 | User-Agent: Mozilla/5.0...
+[2025-07-03 17:00:00] Instagram | Email: test@example.com | Password: pass123 | IP: 0.0.0.0 | User-Agent: Mozilla/5.0...
 ```
 
 ---
@@ -135,3 +135,4 @@ Example format:
 ## ✅ Conclusion
 
 This project gives hands-on experience with DNS spoofing and phishing simulations, helping understand cyber threat techniques in a safe environment.
+
